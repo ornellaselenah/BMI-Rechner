@@ -5,9 +5,11 @@
             Weight in Kilograms
             <input type = "text" name = "weight"><br>
             Height in Centimeter
-            <input type = "text" name = "weight"><br>
+            <input type = "text" name = "height"><br>
             <button type = "submit" value="submit">Calculate BMI</button>
         </form>
-        
+        {% if bmi %}
+        <p>BMI Score: {{bmi}}</p>
+        {% endif %}
     </body>
 </html>
